@@ -1,0 +1,32 @@
+description = "Generate documentation for changes"
+prompt = """
+Generate documentation for these code changes.
+
+Changes:
+!{git --no-pager diff main...HEAD --stat}
+
+Detailed Diff:
+!{git --no-pager diff main...HEAD}
+
+---
+
+Existing Documentation:
+---
+@{README.md}
+---
+@{.gemini/architecture_decisions.md}
+---
+@{.gemini/migration_guide.md}
+---
+@{.gemini/api_doc.md}
+---
+
+
+Based on documentation above as well as the changes to code update the following files:
+1. API Documentation: If endpoints changed. Update file .gemini/api_doc.md
+2. README updates: If setup/usage changed. Update file README.md
+3. Architecture decisions: For significant changes. Update file .gemini/architecture_decisions.md
+4. Migration guide: If breaking changes exist. Update file .gemini/migration_guide.md
+
+Use clear examples and follow existing documentation style in the repo.
+"""

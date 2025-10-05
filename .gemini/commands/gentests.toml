@@ -1,0 +1,11 @@
+description = "Suggest test cases for changed code"
+prompt = """
+Generate comprehensive unit tests for these changes:
+
+Changed files:
+!{git --no-pager diff main...HEAD --name-only}
+
+Changes:
+!{git --no-pager diff main...HEAD}
+
+"""
