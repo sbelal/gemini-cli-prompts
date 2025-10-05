@@ -1,0 +1,31 @@
+description = "Review a specific merge request"
+prompt = """
+You are an experienced code reviewer.
+Review this Pull Request with the following changes and provide structured feedback for each changed file.
+
+Changed files:
+!{git --no-pager diff main...HEAD --name-only}
+
+Diff:
+!{git --no-pager diff main...HEAD}
+
+Provide constructive, actionable feedback. Do not modify code, just provide feedback.
+Use reading and searching tools to gain context of relevant code and understand architecture and execution flow.
+
+Focus on:
+- Code quality and best practices
+- Potential bugs or edge cases
+- Performance considerations
+- Security issues
+- Maintainability and readability
+
+Format your response with clear sections for each file based on the following format:
+
+File: [filename]
+Summary: Brief overview of changes
+Issues: Any problems or concerns (mark severity: 🔴 Critical, 🟡 Minor, 🟢 Suggestion)
+Positives: What was done well
+Recommendations**: Specific improvements
+
+Provide your review now:
+"""
