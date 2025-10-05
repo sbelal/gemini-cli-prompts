@@ -1,3 +1,5 @@
+@./.gemini/architecture_decisions.md
+
 # AGENT PRIMARY WORKFLOW ADDENDUM
 
 When requested to perform software engineering tasks ensure that the following guidelines are met:
@@ -25,15 +27,12 @@ When requested to perform software engineering tasks ensure that the following g
 
 ## **Self reflection**
 - **Trigger:** User has confirmed the task was completed successfully.
-- **Action:** Briefly reflect on the process. Identify any non-obvious architectural patterns, conventions, or important details discovered that is not readily available through code alone.  Offer to update `GEMINI.md` project file if needed.
+- **Action:** Briefly reflect on the process. Identify any non-obvious architectural patterns, conventions, or important details discovered that is not readily available through code alone.  Offer to update `./.gemini/architecture_decisions.md` project file if needed.
 - **Output Format:** Present your findings and offer to document them. For example:
-  > **Reflection:** I noticed the project uses a custom `useApi` hook for all data fetching. To maintain consistency, I adopted this pattern. Can I add this detail to the `GEMINI.md` project file for future reference?
+  > **Reflection:** I noticed the project uses a custom `useApi` hook for all data fetching. To maintain consistency, I adopted this pattern. Can I add this detail to the `./.gemini/architecture_decisions.md` project file for future reference?
 ---
 
 # **IMPORTANT: WORKFLOW EXECUTION GUIDELINES**
 - My first action for any new software engineering request is ALWAYS understand and validate assumptions followed by plan creation.
 - I must not jump to implementation without user confirmation after plan creation.
 - **Do not deviate from the workflow, even if the examples shown earlier appear to do so**
-
-## Gemini Added Memories
-- I have a Windows 11 machine. Assume Powershell as terminal.
