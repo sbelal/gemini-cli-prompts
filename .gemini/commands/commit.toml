@@ -30,6 +30,11 @@ Rules:
 - Use bullet points for multiple changes
 - Be specific but concise
 
+Note that "[" and "]" should be removed in the final commit message.
+Example message, where current branch name is CUMULUS-9000:
+CUMULUS-9000 Added service class to get s3 objects
+
+
 Show the user the generated message and body and ask for approval by saying:
 "Does the message look OK?"
 
