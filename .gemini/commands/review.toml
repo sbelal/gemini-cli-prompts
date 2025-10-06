@@ -38,4 +38,6 @@ When the user provides feedback:
 5. If approved: Update the file .gemini/code_review_guidelines.md with the enhanced guidelines, incorporating the new insights while preserving the existing structure and valuable content.
 6. Confirm: After updating, summarize what was added/changed and how it will improve future reviews.
 
+I can skip post task completion workflow for this task.
+
 """

@@ -29,4 +29,7 @@ Based on documentation above as well as the changes to code update the following
 4. Migration guide: If breaking changes exist. Update file .gemini/migration_guide.md
 
 Use clear examples and follow existing documentation style in the repo.
+
+I can skip post task completion workflow for this task.
+
 """
